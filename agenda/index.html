@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Agenda</title>
+</head>
+<body>
+
+    <section id="container">
+        <h1>Agenda de Contatos</h1>
+
+        <div class="ContainerFiltro">
+
+            <input type="text" class="filtro" onkeyup="FiltrarContatos()" placeholder="Filtrar Contatos">
+
+        </div>
+       
+
+        <div class="ContainerCadastrar">
+            <input type="text" placeholder="Nome" id="nome">
+
+            <input type="email" placeholder="E-mail"  id="email">
+            
+            <input type="text" placeholder="Telefone"  id="telefone">
+        
+            <button class="BtnCadastrar" onclick="CadastrarContato()">Cadastrar</button>
+        </div>
+
+        <div class="ContainerNumberContatos">
+
+            <p class="NumberContatos">Total de Contatos: <span class="quantidadeContatos">0</span></p>
+
+        </div>
+
+        <table id="TabelaAgenda">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="corpoTabela">
+
+            </tbody>
+
+        </table>
+    </section>
+    
+</body>
+</html>

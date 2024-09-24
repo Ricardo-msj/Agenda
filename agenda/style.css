@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html{
+    height: 100%;
+}
+
+#container{
+    background-color: #e0dddd;
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+#container h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.ContainerFiltro, .ContainerCadastrar, .ContainerNumberContatos{
+    width: 100%;
+    border: 3px solid #000;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 25px;
+}
+
+input{
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #cccc;
+    margin-right: 20px;
+}
+
+.BtnCadastrar, .BtnExcluir, .BtnAlterar{
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    background-color: #0e6f21;
+    cursor: pointer;
+}
+
+.BtnCadastrar:hover, .BtnExcluir:hover, .BtnAlterar:hover{
+    background-color: #07290e;
+}
+
+/*Tabela*/
+
+#TabelaAgenda{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+#TabelaAgenda th, td{
+    padding: 1rem;
+    color: #000;
+    background-color: #ffffff;
+    border: 1px solid #0c591b;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#TabelaAgenda th{
+    background-color: #000;
+    color: #fff;
+}
